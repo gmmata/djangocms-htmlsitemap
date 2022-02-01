@@ -3,13 +3,13 @@
 from __future__ import unicode_literals
 
 from django.db import models
-from django.utils.encoding import python_2_unicode_compatible
+# from django.utils.encoding import python_2_unicode_compatible
 from django.utils.translation import ugettext_lazy as _
 
 from cms.models import CMSPlugin
 
 
-@python_2_unicode_compatible
+# @python_2_unicode_compatible
 class HtmlSitemapPluginConf(CMSPlugin):
     min_depth = models.PositiveIntegerField(verbose_name=_("Minimum depth"), default=0)
     max_depth = models.PositiveIntegerField(
